@@ -68,6 +68,7 @@ line-height: 26px;
 letter-spacing: -0.25px;
 background-color: #fafafa;
 color: var(--grey);
+overflow-x: hidden;
 }
 
 img {
@@ -231,6 +232,8 @@ margin-right: auto;
 
 /* SITE-HEADER */
 .site-header {
+  position: relative;
+  z-index: 50;
   background-color: #fff;
 }
 
@@ -241,16 +244,59 @@ margin-right: auto;
 }
 
 
-
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
 }
 
 
+/* HERO */
+.hero {
+  position: relative;
+  z-index: 30;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  background-image: url(../img/hero-bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 595px) top -261px;
+}
 
+.hero__content {
+  width: 100%;
+  max-width: 450px;
+}
 
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 100;
+  color: var(--black);
+  letter-spacing: -1px;
+}
 
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 28px;
+
+  /* letter-spacing: -0.28px; */
+}
+
+.hero__img {
+  position: absolute;
+  width: 729px;
+  height: 900px;
+  left: calc(50% + 76px);
+  top: -120px;
+
+  /* width: 789px;
+  height: 960px; */
+  /* left: calc(50% + 73px);
+  top: -134px; */
+}
 
 
 /* RETINA */
